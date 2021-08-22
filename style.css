@@ -1,0 +1,322 @@
+html{
+    overflow-x: hidden;
+}
+.navbar-brand a img {
+    width: 250px;
+    height: auto;
+}
+
+body{
+    background: #10101a;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+img{
+    max-width: 100%;
+}
+*{
+    outline: none !important;
+}
+a{
+    color: #792f3a
+;
+
+}
+a:hover{
+    color:#792f3a;
+    text-decoration: none;
+}
+/* ajout par rapport a la nav de bootsrap */
+.nav{
+    flex-direction: column;
+    text-align: center;
+}
+/* ///////////////////////////////////// */
+.header-left{
+    width: 80px;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    background:#0c0c14 ;
+    border-right: 1px solid rgba(11, 11, 19, 0.1);
+    z-index: 99999;
+}
+.header-left .top a{
+    background: #792f3a;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 40px;
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+    display: inline-block;
+    text-align: center;
+}
+
+.header-left .nav-menu{
+    padding-top: 45px;
+    padding-bottom: 45px;
+    
+}
+.nav-menu li{
+    width: 100%;
+}
+.nav-menu li+li{
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-link{
+    margin: 0;
+    padding: 10px 0;
+    color: white;
+    text-decoration: none;
+    transition: ease all 0.35s;
+
+}
+.nav-link i{
+    font-size: 37px;
+    width :40px;
+    height: 40px;
+    line-height: 40px;
+}
+button.toggler-menu{
+    background: none;
+    border: none;
+}
+
+.mob-header{
+    padding: 15px;
+    display: none;
+    top: 0;
+    width: 100%;
+    z-index: 1100000000;
+}
+.toggler-menu{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin: 0;
+    border-radius: 0;
+    padding: 0;
+    margin-left: 15px; 
+    background: #792f3a
+;
+    border: none;
+    margin-left: auto;
+}
+.toggler-menu span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 25px;
+    height:2px;
+    margin: auto;
+    background:#fff!important;
+    color: white;
+    box-shadow: 0px -8px 0 0 currentColor, 0px 8px 0 0 currentColor;
+}
+
+@media (max-width:767px) {
+    .mob-header{
+        display: block;
+    }
+    .header-left{
+        transition: ease all 0.35s;
+        left: -200px;
+        z-index: 222;
+    }
+    .header-left.menu-open{
+        left: 0;
+    }
+}
+
+.banner{
+    position: relative;
+    overflow: hidden;
+}
+.banner:after{
+    content: '';
+    position: absolute;
+    right: -20vh;
+    bottom: -20vh;
+    width: 120vh;
+    height: 120vh;
+    border-radius: 50%;
+    border-radius: rgba(0,0,0,0.1);
+    z-index: -1;
+}
+
+.top-fixed{
+    position: absolute;
+    padding: 30px 50px 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+}
+.info{
+    margin-left: 195px;
+
+}
+.info label{
+    margin: 0;
+    color: aliceblue;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+
+}
+.info label + label{
+margin-left: 40px;
+}
+.social{
+    margin-left: auto;
+    font-size: 20px;
+}
+.social a i{
+    margin-right: 10px;
+    color: aliceblue;
+    width: 43px;
+    height: 43px;
+    border-radius: 50px;
+    border: 2px solid aliceblue;
+    padding: 10px;
+    line-height: 20px;
+    text-align: center;
+
+}
+.banner .full-screen{
+    min-height: 100vh;
+}
+.banner .me{
+    position: absolute;
+    right: 0;
+    width: 50vw;
+    height: 100%;
+    background-size: cover;
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+.box{
+    padding-top: 90px;
+    padding-bottom: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+.box h6{
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 0 20px;
+    font-family: 'Poppins', sans-serif;
+}
+.box h1{
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1;
+    margin: 0 0 20px;
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+}
+.box .lead{
+    color: aliceblue;
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+.box .desc{
+max-width: 450px;
+color: aliceblue;
+font-family: 'Poppins', sans-serif;
+
+}
+.btn-bar{
+    padding-top:10px;
+}
+.btn-bar a{
+    color: aliceblue;
+    font-size: 25px;
+    line-height: 1;
+    font-weight: 400;
+    position: relative;
+    text-decoration: none;
+    padding-left: 0;
+    transition: ease all 0.35s;
+
+}
+.btn-bar a:after{
+    content: "";
+    position:absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    widows:0;
+    height: 2px;
+    background: currentColor;
+    transition: ease all 0.35s;
+}
+.btn-bar a:hover{
+    padding-left: 45px;
+}
+.btn-bar a:hover:after{
+    width: 40px;
+}
+@media (max-width:767px) {
+    .banner .top-fixed{
+        display: none !important;
+    }
+}
+@media (max-width:767px) {
+    .banner .box h6{
+        font-size: 18px;
+        margin: 0 0 10px;
+    }
+}
+@media (max-width:767px) {
+    .banner .box h1{
+        font-size: 50px;
+        
+    }
+}
+@media (max-width:767px) {
+    .banner .box .lead{
+        font-size: 16px;
+        margin-bottom: 15px;
+        
+    }
+}
+@media (max-width:991px) {
+    .banner .me{
+        opacity: 0.4;
+        width: 80vw;
+        
+    }
+}
+hr {
+    border: none;
+    border-top: 3px solid #333;
+    color:aliceblue;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+    margin: 0;
+    box-shadow: 0 -9px 25px 0 #792f3a;
+}
+
+hr:after {
+    
+    
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+    
+}
