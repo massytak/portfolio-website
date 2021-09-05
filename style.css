@@ -289,13 +289,15 @@ button.toggler-menu {
 }
 hr {
   border: none;
-  border-top: 3px solid #333;
-  color: aliceblue;
+  border-top: 1px solid #838282;
+margin-left: 100px;
   overflow: visible;
   text-align: center;
-  height: 5px;
+  height: 0px;
   margin: 0;
-  box-shadow: 0 -9px 25px 0 #792f3a;
+  box-shadow: 0px -4px 10px 5px #792f3a8c;
+  width: 95%;
+  margin: 0 0 0 6%;
 }
 
 hr:after {
@@ -389,3 +391,82 @@ top: -25px;
     padding-right: 10px;
 
 }
+.box1{
+  background: #0b0b13;
+  padding: 40px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+
+}
+.box1:before{
+  content: "";
+  position: absolute;
+  top: -220px;
+  left: -220px;
+  width: 200px;
+  height: 200px;
+  border-radius: 0;
+  z-index: -1;
+  background:#0b0b13 ;
+  transition: cubic-bezier(0.39,0.58,0.57,1) all 0.55s;
+}
+.box1:after{
+  content: "";
+  position: absolute;
+  top: -72px;
+  left: -40px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  z-index: -2;
+  background: #fd6c82;
+  background-image: linear-gradient(315deg,#fd6c82 0%, #792f3a 74%);
+  transition: cubic-bezier(0.32,0.58,0.57, 1 ) all 0.15s;
+}
+
+.box1 .icon{
+  line-height: 60px;
+  font-size: 40px;
+  width: 67px;
+}
+.box1 .content{
+  padding-top: 25px;
+}
+.box1 h5{
+  margin-bottom: 30px;
+  color: aliceblue;
+  font-size: 25px;
+}
+.box1:hover:before{
+  top: -72px;
+  left: -40px;
+  border-radius: 50%;
+}
+.box1:hover:after{
+  content: "";
+  width: 120%;
+  left: -10%;
+  top: -10%;
+  height: 120%;
+  border-radius: 0;
+  transition: cubic-bezier(0.39,0.58,0.57,1) all 0.55s;
+
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.col-lg-4 {
+  max-width: 75%;
+  margin-bottom: 15px;
+
+}
+.separated{
+  margin-left: 13%;
+}
+
