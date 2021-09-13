@@ -668,6 +668,14 @@ hr:after {
     font-family: 'Arial'
 }
 
+.row {
+    justify-content: center;
+}
+
+.plus {
+    margin-bottom: 79px;
+}
+
 .row1 {
     display: flex;
     flex-direction: row;
@@ -806,4 +814,152 @@ hr:after {
 
 .project {
     margin: 3em;
+}
+
+#blog {
+    font-family: "poppins", sans-serif;
+}
+
+.subtitle {
+    color: white;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 15px 65px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border: 3px solid white;
+    border-radius: 50px;
+    font-family: "poppins", sans-serif;
+}
+
+.folio {
+    position: relative;
+    text-align: center;
+}
+
+.port {
+    width: 200px;
+    text-align: center;
+    overflow: hidden;
+    transform: rotate(45deg);
+    height: 200px;
+    position: relative;
+    display: inline-block;
+}
+
+.port>img {
+    width: 180px;
+    height: 180px;
+    transform: rotate( -45deg);
+    width: 280px;
+    height: 280px;
+    margin: -21px 3px -40px 16px;
+    filter: blur(0);
+    padding-bottom: 75px;
+    padding-top: 26px;
+}
+
+@media (max-width: 880px) {
+    .port {
+        width: 95px;
+        text-align: center;
+        overflow: hidden;
+        transform: rotate( 45deg);
+        height: 97px;
+        position: relative;
+        display: inline-block;
+    }
+    .port>img {
+        width: 180px;
+        height: 180px;
+        transform: rotate( -45deg);
+        width: 148px;
+        height: 189px;
+        margin: -26px 7px -32px 21px;
+        filter: blur(0);
+        padding-bottom: 76px;
+        padding-top: 22px;
+    }
+    .Hover:hover {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+element.style {}
+
+.port .Hover {
+    opacity: 0;
+    visibility: hidden;
+}
+
+@media (min-width: 880px) {
+    .Hover {
+        right: 9px;
+        width: 202px;
+        height: 181px;
+        position: absolute;
+        top: -22px;
+        text-align: center;
+        background-color: rgba(64, 64, 64, 0.8);
+        transform: rotate(-45) scale(0);
+        transition: all 400ms ease;
+        line-height: 21px;
+        left: -17px;
+        margin: 34px 13px -37px 16px;
+    }
+    .Hover a.details {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        font-size: 20px;
+        color: #404040;
+        background: aliceblue;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: -50px;
+        bottom: 0;
+        margin: auto;
+    }
+    .Hover a.details {
+        color: #de3c2f;
+    }
+}
+
+.Hover a.prePhoto {
+    background: #de3c2f none repeat scroll 0 0;
+    border-radius: 50%;
+    bottom: 0;
+    color: white;
+    font-size: 20px;
+    height: 40px;
+    left: -50px;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+}
+
+.Hover a.prePhoto:hover {
+    color: white;
+}
+
+.Hover a i {
+    position: relative;
+    top: 10px;
+}
+
+.port .Hover {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.port:hover .Hover {
+    opacity: 1;
+    visibility: visible;
+    transform: rotate(-45deg) scale(1);
+    filter: blur(0);
 }
