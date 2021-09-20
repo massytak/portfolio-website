@@ -5,6 +5,9 @@
         $(".toggler-menu").on("click", function() {
             $(".header-left").stop().toggleClass("menu-open");
         });
+        $(".nav-link").on("click", function() {
+            $(".header-left").stop().toggleClass("menu-open");
+        });
         $(".header-left a").on("click", function() {
             var toggle = $(".toggler-menu");
         });
@@ -54,7 +57,7 @@ $(document).ready(function($) {
                     size: 200,
                     thickness: 15,
                     fill: {
-                        color: '#663399'
+                        color: '#792f3a'
                     }
                 }).on('circle-animation-progress', function(event, progress, stepValue) {
                     $(this).find('strong').text((stepValue * 100).toFixed(0) + "%");
