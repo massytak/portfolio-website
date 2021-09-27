@@ -69,3 +69,6 @@ $(document).ready(function($) {
     animateElements();
     $(window).scroll(animateElements);
 });
+document.getElementById("submit").addEventListener("click", function(event) {
+    event.location.reload();
+});

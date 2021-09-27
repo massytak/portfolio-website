@@ -192,7 +192,6 @@ button.toggler-menu {
 
 .social {
     margin-left: auto;
-    font-size: 20px;
 }
 
 .social a i {
@@ -205,6 +204,10 @@ button.toggler-menu {
     padding: 10px;
     line-height: 20px;
     text-align: center;
+}
+
+.social a i:hover {
+    background: #792f3a;
 }
 
 .banner .full-screen {
@@ -413,7 +416,7 @@ hr:after {
     text-align: center;
     padding-top: 40px;
     color: aliceblue;
-    width: 300px;
+    width: 200px;
     margin: auto;
 }
 
@@ -1010,17 +1013,17 @@ hr:after {
 
 @media (min-width: 880px) {
     .Hover {
-        right: 9px;
+        right: 50px;
         width: 202px;
-        height: 181px;
+        height: 180px;
         position: absolute;
         top: -22px;
         text-align: center;
         background-color: rgba(64, 64, 64, 0.8);
-        transform: rotate(-45) scale(0);
+        transform: rotate(-45);
         transition: all 400ms ease;
         line-height: 21px;
-        left: -17px;
+        left: -18px;
         margin: 34px 13px -37px 16px;
     }
     .Hover a.details {
